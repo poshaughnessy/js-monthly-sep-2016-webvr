@@ -102,10 +102,12 @@ body {
   margin-top: 0.6em;
 }
 
-.full-height .slide-content {
-  box-sizing: border-box;
-  height: 100vh;
-  padding: 5vh;
+.valign-top {
+  align-items: flex-start;
+}
+
+.valign-bottom {
+  align-items: flex-end;
 }
 
 .no-margin {
@@ -215,7 +217,6 @@ li {
 }
 
 blockquote {
-  color: #444;
   font-style: italic;
   font-size: 1.5em;
   display: flex;
@@ -449,6 +450,14 @@ pre .xml .cdata {
 
 .bg-cliff {
   background-image: url(images/presence-cliff-edge.jpg);
+}
+
+.bg-virtuality {
+  background-image: url(images/virtuality-vignette.jpg);
+}
+
+.bg-grandma {
+  background-image: url(images/grandma-vr-joy.jpg)
 }
 
 #slide-1 h1 {

@@ -4,6 +4,7 @@ style: styles.css
 script: script.js
 controls: true
 
+
 -- bg-lights-of-city
 
 <h1>WebVR</h1>
@@ -15,13 +16,31 @@ controls: true
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
--- full-height bg-rollercoaster
 
-## We're on the edge of a new era
+-- valign-top bg-rollercoaster
 
--- full-height bg-cliff
+## We're on the edge of a new era...
 
-## Presence
+
+-- bg-lights-of-city
+
+<blockquote style="font-weight:900">&ldquo;VR is the next major computing platform after mobile.&rdquo;</blockquote>
+
+Mark Zuckerberg
+
+
+-- valign-top bg-cliff
+
+# Presence
+
+
+-- valign-bottom bg-grandma
+
+<blockquote>&ldquo;I've made a lot of applications & nothing I ever created was ever going to make someone 
+laugh, cry, recoil, scream or have that reaction that VR lets you have.&rdquo;</blockquote>
+
+Josh Carpenter
+
 
 --
 
