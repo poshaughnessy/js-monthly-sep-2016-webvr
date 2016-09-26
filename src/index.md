@@ -42,10 +42,18 @@ laugh, cry, recoil, scream or have that reaction that VR lets you have.&rdquo;</
 Josh Carpenter
 
 
+-- valign-bottom bg-another-world
+
+## Forgot web sites, we can now create web *worlds*
+
+
 -- bg-lights-of-city
 
 # WebVR
 
+![WebVR browser enthusiasm](images/webvr-browser-enthusiasm.png)
+
+<p class="caption">Browser enthusiasm - <a href="https://iswebvrready.org/">iswebvrready.org</a></p>
 
 --
 

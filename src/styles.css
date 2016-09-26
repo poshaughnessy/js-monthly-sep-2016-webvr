@@ -298,16 +298,23 @@ table th {
 .caption {
   font-size: 0.7em;
   margin-top: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+}
+
+.credits {
+  margin-top: 5em;
+  font-size: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
 }
 
 /* Quote by... */
 blockquote + p {
   font-size: 0.9em;
   margin-top: 1em;
-}
-
-.auto + .caption {
-  margin: 0 0 1.5em 0;
 }
 
 /* Code Highlighting */
@@ -439,14 +446,6 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
-.credits {
-  margin-top: 5em;
-  font-size: 0.5em;
-  font-weight: normal;
-  text-shadow: none;
-  -webkit-text-stroke-width: 0;
-}
-
 .bg-lights-of-city {
   background-image: url(images/lights-of-city-green-dark.jpg);
 }
@@ -464,7 +463,11 @@ pre .xml .cdata {
 }
 
 .bg-grandma {
-  background-image: url(images/grandma-vr-joy.jpg)
+  background-image: url(images/grandma-vr-joy.jpg);
+}
+
+.bg-another-world {
+  background-image: url(images/universefromameadow-mindcriminal-vignette.jpg);
 }
 
 #slide-1 h1 {
