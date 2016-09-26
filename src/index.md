@@ -4,7 +4,7 @@ style: styles.css
 script: script.js
 controls: true
 
---
+-- bg-lights-of-city
 
 <h1>WebVR</h1>
 
@@ -15,11 +15,11 @@ controls: true
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
--- full-height
+-- full-height bg-rollercoaster
 
 ## We're on the edge of a new era
 
--- full-height
+-- full-height bg-cliff
 
 ## Presence
 

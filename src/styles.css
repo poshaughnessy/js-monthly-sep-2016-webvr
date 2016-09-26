@@ -439,9 +439,16 @@ pre .xml .cdata {
   -webkit-text-stroke-width: 0;
 }
 
-#slide-1,
-#slide-4 {
+.bg-lights-of-city {
   background-image: url(images/lights-of-city-green-dark.jpg);
+}
+
+.bg-rollercoaster {
+  background-image: url(images/on-the-edge-apol.jpg);
+}
+
+.bg-cliff {
+  background-image: url(images/presence-cliff-edge.jpg);
 }
 
 #slide-1 h1 {
@@ -452,14 +459,6 @@ pre .xml .cdata {
 #slide-1 h2 {
   font-size: 1.8em;
   margin-bottom: 1.5em;
-}
-
-#slide-2 {
-  background-image: url(images/on-the-edge-apol.jpg);
-}
-
-#slide-3 {
-  background-image: url(images/presence-cliff-edge.jpg);
 }
 
 /* Media Queries */
