@@ -55,8 +55,32 @@ Josh Carpenter
 
 <p class="caption">Browser enthusiasm - <a href="https://iswebvrready.org/">iswebvrready.org</a></p>
 
---
 
+-- bg-lights-of-city
+
+![Requirements](images/webvr-requirements.png)
+
+
+-- bg-lights-of-city
+
+## WebVR API
+
+
+-- bg-lights-of-city
+
+## three.js
+
+-- bg-lights-of-city
+
+## A-Frame
+
+
+-- bg-eee
+
+![A-Frame basic scene](images/aframe-basic.png)
+
+
+-- bg-llama-carousel
 
 
 -- bg-lights-of-city

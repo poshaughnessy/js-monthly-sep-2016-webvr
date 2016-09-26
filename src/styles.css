@@ -470,6 +470,14 @@ pre .xml .cdata {
   background-image: url(images/universefromameadow-mindcriminal-vignette.jpg);
 }
 
+.bg-eee {
+  background: #eee;
+}
+
+.bg-llama-carousel {
+  background-image: url(images/llama-viewer.png);
+}
+
 #slide-1 h1 {
   margin-bottom: 0.25em;
 }
