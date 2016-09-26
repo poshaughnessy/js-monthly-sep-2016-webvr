@@ -796,9 +796,16 @@ pre .xml .cdata {
   -webkit-text-stroke-width: 0;
 }
 
-#slide-1,
-#slide-4 {
+.bg-lights-of-city {
   background-image: url(images/lights-of-city-green-dark.jpg);
+}
+
+.bg-rollercoaster {
+  background-image: url(images/on-the-edge-apol.jpg);
+}
+
+.bg-cliff {
+  background-image: url(images/presence-cliff-edge.jpg);
 }
 
 #slide-1 h1 {
@@ -809,14 +816,6 @@ pre .xml .cdata {
 #slide-1 h2 {
   font-size: 1.8em;
   margin-bottom: 1.5em;
-}
-
-#slide-2 {
-  background-image: url(images/on-the-edge-apol.jpg);
-}
-
-#slide-3 {
-  background-image: url(images/presence-cliff-edge.jpg);
 }
 
 /* Media Queries */
@@ -885,7 +884,7 @@ pre .xml .cdata {
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide" id="slide-1">
+  <div class="slide  bg-lights-of-city" id="slide-1">
     <section class="slide-content"><h1>WebVR</h1>
 
 <h2>Creating Virtual Worlds with JavaScript</h2> 
@@ -895,11 +894,11 @@ pre .xml .cdata {
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
 </div></section>
   </div>
-  <div class="slide hidden  full-height" id="slide-2">
+  <div class="slide hidden  full-height bg-rollercoaster" id="slide-2">
     <section class="slide-content"><h2 id="we-re-on-the-edge-of-a-new-era">We&#39;re on the edge of a new era</h2>
 </section>
   </div>
-  <div class="slide hidden  full-height" id="slide-3">
+  <div class="slide hidden  full-height bg-cliff" id="slide-3">
     <section class="slide-content"><h2 id="presence">Presence</h2>
 </section>
   </div>
