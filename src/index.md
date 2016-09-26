@@ -6,9 +6,9 @@ controls: true
 
 --
 
-# WebVR
+<h1>WebVR</h1>
 
-## Creating Virtual Worlds with JavaScript 
+<h2>Creating Virtual Worlds with JavaScript</h2> 
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
@@ -17,7 +17,9 @@ controls: true
 
 --
 
-## We're on the edge of something...
+<div class="full-height">
+    <h2>We're on the edge of something...</h2>
+</div>
 
 --
 

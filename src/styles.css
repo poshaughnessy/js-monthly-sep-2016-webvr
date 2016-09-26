@@ -2,159 +2,6 @@
  * Based on github.com/sjaakvandenberg/cleaver-dark
  */
 
-/* Local Fonts */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('fonts/opensans/300.woff2') format('woff2'),
-  url('fonts/opensans/300.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/opensans/400.woff2') format('woff2'),
-  url('fonts/opensans/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/opensans/600.woff2') format('woff2'),
-  url('fonts/opensans/600.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/opensans/700.woff2') format('woff2'),
-  url('fonts/opensans/700.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: url('fonts/opensans/800.woff2') format('woff2'),
-  url('fonts/opensans/800.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: url('fonts/opensans/300i.woff2') format('woff2'),
-  url('fonts/opensans/300i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/opensans/400i.woff2') format('woff2'),
-  url('fonts/opensans/400i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: url('fonts/opensans/600i.woff2') format('woff2'),
-  url('fonts/opensans/600i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/opensans/700i.woff2') format('woff2'),
-  url('fonts/opensans/700i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 800;
-  src: url('fonts/opensans/800i.woff2') format('woff2'),
-  url('fonts/opensans/800i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/merriweather/400.woff2') format('woff2'),
-  url('fonts/merriweather/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/merriweather/700.woff2') format('woff2'),
-  url('fonts/merriweather/700.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 900;
-  src: url('fonts/merriweather/900.woff2') format('woff2'),
-  url('fonts/merriweather/900.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/merriweather/400i.woff2') format('woff2'),
-  url('fonts/merriweather/400i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/merriweather/700i.woff2') format('woff2'),
-  url('fonts/merriweather/700i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 900;
-  src: url('fonts/merriweather/900i.woff2') format('woff2'),
-  url('fonts/merriweather/900i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/fira/400.woff2') format('woff2'),
-  url('fonts/fira/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: url('fonts/fira/500.woff2') format('woff2'),
-  url('fonts/fira/500.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/fira/700.woff2') format('woff2'),
-  url('fonts/fira/700.woff') format('woff');
-}
-
 /* Theme Styles */
 body {
   font-family: 'Courier New', sans-serif;
@@ -162,12 +9,12 @@ body {
   text-align: center;
   overflow: hidden;
   color: #fff;
-  text-shadow: 2px 2px 8px #225c48,
-    -2px -2px 8px #225c48,
-    2px -2px 8px #225c48,
-    -2px 2px 8px #225c48,
-    0 -2px 8px #225c48,
-    0 2px 8px #225c48
+  text-shadow: 2px 2px 8px #333,
+    -2px -2px 8px #333,
+    2px -2px 8px #333,
+    -2px 2px 8px #333,
+    0 -2px 8px #333,
+    0 2px 8px #333
 }
 
 html,
@@ -188,11 +35,11 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  background-color: #111;
+  background-size: 100% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111;
-  background-size: 100% 100%;
 }
 
 .slide-content {
@@ -201,7 +48,7 @@ body {
   max-height: 100%;
   padding: 0;
   margin: 0 auto;
-  font-size: 100%;
+  font-size: 120%;
   font-weight: bold;
   line-height: 1.375;
   overflow: hidden;
@@ -209,6 +56,12 @@ body {
 
 .slide-content h2:first-child {
   margin-top: 0.6em;
+}
+
+.full-height {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 5vh;
 }
 
 .no-margin {
@@ -278,12 +131,6 @@ img {
   border-left-color: #272822;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Courier New', serif;
-}
-
 h1 {
   margin: 0 0 0.5em 0;
   font-size: 250%;
@@ -295,12 +142,6 @@ h2 {
   font-size: 150%;
   font-weight: bold;
   line-height: 1.4;
-}
-
-h2.vertical-center {
-  font-size: 180%;
-  position: relative;
-  top: -0.5em;
 }
 
 h3 {
@@ -548,6 +389,12 @@ pre .xml .cdata {
 
 #slide-1 {
   background-image: url(images/lights-of-city-green-dark.jpg);
+  text-shadow: 2px 2px 8px #225c48,
+  -2px -2px 8px #225c48,
+  2px -2px 8px #225c48,
+  -2px 2px 8px #225c48,
+  0 -2px 8px #225c48,
+  0 2px 8px #225c48
 }
 
 #slide-1 h1 {
