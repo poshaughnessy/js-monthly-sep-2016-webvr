@@ -7,9 +7,9 @@ controls: true
 
 -- bg-lights-of-city
 
-<h1>WebVR</h1>
+# WebVR
 
-<h2>Creating Virtual Worlds with JavaScript</h2> 
+## Creating Virtual Worlds with JavaScript 
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
@@ -19,7 +19,7 @@ controls: true
 
 -- valign-top bg-rollercoaster
 
-## We're on the edge of a new era...
+### We're on the edge of a new era...
 
 
 -- bg-lights-of-city
@@ -31,7 +31,7 @@ Mark Zuckerberg
 
 -- valign-top bg-cliff
 
-# Presence
+## Presence
 
 
 -- valign-bottom bg-grandma
@@ -42,7 +42,16 @@ laugh, cry, recoil, scream or have that reaction that VR lets you have.&rdquo;</
 Josh Carpenter
 
 
+-- bg-lights-of-city
+
+# WebVR
+
+
 --
+
+
+
+-- bg-lights-of-city
 
 # Thanks!
 
