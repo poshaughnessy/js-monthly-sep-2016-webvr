@@ -359,19 +359,63 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
  * Based on github.com/sjaakvandenberg/cleaver-dark
  */
 
+/* Local Fonts */
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Source_Code_Pro/SourceCodePro-Regular.ttf') format('truetype'),
+  url('fonts/Source_Code_Pro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/Source_Code_Pro/SourceCodePro-Medium.ttf') format('truetype'),
+  url('fonts/Source_Code_Pro/SourceCodePro-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/Source_Code_Pro/SourceCodePro-Semibold.ttf') format('truetype'),
+  url('fonts/Source_Code_Pro/SourceCodePro-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Source_Code_Pro/SourceCodePro-Bold.ttf') format('truetype'),
+  url('fonts/Source_Code_Pro/SourceCodePro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/Source_Code_Pro/SourceCodePro-Black.ttf') format('truetype'),
+  url('fonts/Source_Code_Pro/SourceCodePro-Black.ttf') format('truetype');
+}
+
 /* Theme Styles */
 body {
-  font-family: 'Courier New', sans-serif;
+  font-family: 'Source Code Pro', sans-serif;
   font-size: 100%;
   text-align: center;
   overflow: hidden;
   color: #fff;
-  text-shadow: 2px 2px 8px #333,
-    -2px -2px 8px #333,
-    2px -2px 8px #333,
-    -2px 2px 8px #333,
-    0 -2px 8px #333,
-    0 2px 8px #333
+  text-shadow: 2px 2px 4px #333,
+    -2px -2px 4px #333,
+    2px -2px 4px #333,
+    -2px 2px 4px #333,
+    0 -2px 4px #333,
+    0 2px 4px #333;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 html,
@@ -746,16 +790,10 @@ pre .xml .cdata {
 
 #slide-1 {
   background-image: url(images/lights-of-city-green-dark.jpg);
-  text-shadow: 2px 2px 8px #225c48,
-  -2px -2px 8px #225c48,
-  2px -2px 8px #225c48,
-  -2px 2px 8px #225c48,
-  0 -2px 8px #225c48,
-  0 2px 8px #225c48
 }
 
 #slide-1 h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 0.25em;
 }
 
