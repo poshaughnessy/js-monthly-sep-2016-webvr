@@ -157,7 +157,7 @@
 
 /* Theme Styles */
 body {
-  font-family: 'Fira Mono', sans-serif;
+  font-family: 'Courier New', sans-serif;
   font-size: 100%;
   text-align: center;
   overflow: hidden;
@@ -377,7 +377,7 @@ a {
 
 a:hover {
   color: #94ec85;
-  border-bottom: 1px solid #66d9ef;
+  border-bottom: 1px solid #94ec85;
 }
 
 hr {
@@ -566,6 +566,15 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+#slide-1 h1 {
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+#slide-1 h2 {
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
 
 /* Media Queries */
 /* 640 x 480 is the default (1em) */
