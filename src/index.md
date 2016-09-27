@@ -22,7 +22,7 @@ controls: true
 ### We're on the edge of a new era...
 
 
--- bg-lights-of-city
+-- bg-lights-of-city large-quote
 
 <blockquote style="font-weight:900">&ldquo;VR is the next major computing platform after mobile.&rdquo;</blockquote>
 
@@ -367,7 +367,7 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 -- bg-lights-of-city
 
-## [github.com/samsunginternet/a-frame-demos](https://github.com/samsunginternet/a-frame-demos/)
+### [github.com/samsunginternet/a-frame-demos](https://github.com/samsunginternet/a-frame-demos/)
 
 
 -- bg-lights-of-city

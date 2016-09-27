@@ -459,6 +459,10 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+.large-quote blockquote {
+  font-size: 2em;
+}
+
 .iframe .slide-content {
   height: 100%;
   padding: 0;
