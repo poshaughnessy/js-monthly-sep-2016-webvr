@@ -496,6 +496,10 @@ pre .xml .cdata {
   background-image: url(images/standing-on-universe-flickr-couse-baker.jpg);
 }
 
+.bg-fff {
+  background: #fff;
+}
+
 .bg-eee {
   background: #eee;
 }

@@ -29,7 +29,9 @@ controls: true
 Mark Zuckerberg
 
 
-<!-- TODO slide showing different headsets: Gear VR, Vive, Oculus Rift, Cardboard, Daydream -->
+-- bg-fff
+
+![VR headsets](images/vr-headsets.jpg)
 
 
 -- valign-top bg-cliff
@@ -64,14 +66,14 @@ Josh Carpenter
 
 ### Stereoscopic
 
-<img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="width:80%"/>
+<img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="max-width:80%; max-height: 70vh"/>
 
 
 -- bg-lights-of-city
 
 ### Browser handles distortion
 
-<img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="width:80%"/>
+<img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="max-width:80%; max-height: 70vh"/>
 
 
 -- bg-lights-of-city
@@ -341,7 +343,7 @@ function generateImage(id, src) {
 
 ```javascript
 new AFRAME.TWEEN.Tween(el.object3D.rotation)
-     .to({y: targetRotation}, self.data.duration)
+     .to({y: targetRotation}, 1000) // 1 second
      .start();
 ```     
 
@@ -366,6 +368,8 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 
 -- bg-lights-of-city
+
+![Github demos repo](images/github-aframe-demos.png)
 
 ### [github.com/samsunginternet/a-frame-demos](https://github.com/samsunginternet/a-frame-demos/)
 
