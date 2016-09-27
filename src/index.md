@@ -54,9 +54,29 @@ Josh Carpenter
 
 # WebVR
 
+* Headset discovery
+* Full-screen headset display
+* Sensor integration, e.g. orientation
+* Rendering for different hardware
+
+
+-- bg-lights-of-city
+
+### Browser enthusiasm (so far)
+
 ![WebVR browser enthusiasm](images/webvr-browser-enthusiasm.png)
 
-<p class="caption">Browser enthusiasm - <a href="https://iswebvrready.org/">iswebvrready.org</a></p>
+<p class="caption"><a href="https://iswebvrready.org/">iswebvrready.org</a></p>
+
+
+-- bg-lights-of-city
+
+* Chrome - special build & flag
+* Firefox - nightly build & add-on
+* Samsung Internet - visit `internet:`
+* Edge - they're working on it
+
+[webvr.info](https://webvr.info/)
 
 
 -- bg-lights-of-city
@@ -68,26 +88,44 @@ Josh Carpenter
 
 ## WebVR API
 
+Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
+
+-- bg-lights-of-city
+
 ```javascript
-# Get list of available headsets
+// Get list of available headsets
 navigator.getVRDisplays();
 
-# Request fullscreen on headset
+// Request fullscreen on headset
 VRDisplay.requestPresent({ source: myCanvas })
-
-# Like normal rAF but could be 90hz or more 
-VRDisplay.requestAnimationFrame();
-
-# Render what's on the source canvas
-VRDisplay.submitFrame();
 ```
 
 -- bg-lights-of-city
 
 ```javascript
-# Get eye offset and eye viewport data 
-# to help make our scene stereoscopic 
+// Like normal rAF but could be 90hz or more 
+VRDisplay.requestAnimationFrame();
+
+// Render what's on the source canvas
+VRDisplay.submitFrame();
+```
+
+
+-- bg-lights-of-city
+
+```javascript
+/**
+ * Get eye offset & rendering dimensions to help us
+ * construct a stereoscopic scene for the user.
+ */ 
 VRDisplay.getEyeParameters(VREye);
+
+/**
+ * Get view & projection matrices for current frame
+ * & VRPose with pos, orientation, accel & velocity.
+ */
+ VRDisplay.getFrameData();
+
 ```
 
 
