@@ -45,7 +45,7 @@ laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
 Josh Carpenter
 
 
--- valign-bottom bg-another-world
+-- valign-top bg-another-world
 
 ## From web sites to web *worlds*
 
@@ -213,7 +213,7 @@ animate();
 ```
 
 
--- bg-lights-of-city iframe
+-- iframe
 
 <iframe src="demos/threejs-spinning-cube/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
@@ -249,7 +249,7 @@ effect.render( scene, camera );
 -- bg-lights-of-city
 
 ```html
-<script src="js/a-frame.js"></script>
+<script src="aframe.js"></script>
 ```
 
 
@@ -270,12 +270,108 @@ effect.render( scene, camera );
 ```
 
 
--- bg-lights-of-city iframe
+-- iframe
 
 <iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
 
--- bg-llama-carousel
+-- bg-llama-carousel valign-top
+
+### Let's make a Flickr carousel
+
+
+-- bg-lights-of-city
+
+```html
+<script src="aframe-layout-component.min.js"></script>
+
+...
+
+<a-entity id="imageContainer" 
+          layout="type: circle; radius: 3"></a-entity>
+```
+
+-- bg-lights-of-city
+
+```html
+<script src="aframe-look-at-component.min.js"></script>
+```
+
+```javascript
+function generateImage(id, src) {
+
+  var imageEl = document.createElement('a-image');
+  imageEl.setAttribute('src', src);
+  imageEl.setAttribute('width', 1.25);
+  imageEl.setAttribute('height', 1);
+  imageEl.setAttribute('look-at', '0 0 0');
+
+  imageContainer.appendChild(imageEl);
+
+}
+```
+
+
+-- bg-lights-of-city
+
+```html
+<a-entity camera look-controls>
+  <a-cursor></a-cursor>
+</a-entity>
+```
+
+
+-- bg-lights-of-city
+
+### Pre-canned animations
+
+```html
+<a-animation begin="click" 
+             attribute="rotation" 
+             to="0 360 0" 
+             dur="1000" 
+             fill="forwards"></a-animation>
+```
+<p class="caption">Just place inside an element</p>
+
+
+-- bg-lights-of-city
+
+### Or take control with Tween.js
+
+```javascript
+new AFRAME.TWEEN.Tween(el.object3D.rotation)
+     .to({y: targetRotation}, self.data.duration)
+     .start();
+```     
+
+-- bg-sky-gawthrop
+
+```html
+<a-assets id="assets">
+  <img id="mountainSky" src="images/sky_by_gawthrop.jpg"/>
+</a-assets>
+<a-sky src="#mountainSky"/>
+```
+
+
+-- iframe
+
+<iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe>
+
+
+-- bg-lights-of-city
+
+## Where next?
+
+* Touchpad / controllers
+* Physics / gaming engines
+* Web Audio
+
+
+-- bg-earth-rising valign-top
+
+### What worlds will you create?
 
 
 -- bg-lights-of-city
@@ -288,4 +384,9 @@ effect.render( scene, camera );
   <p>[medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev)</p>
 </div>
 
-<p class="credits">Image credits: rollercoaster photo by <a href="https://www.flickr.com/photos/apol-photography/3729520874/">apol photography</a>, cliff photo by <a href="http://www.fotolia.com">Fotolia (purchased)</a></p>
+<p class="credits">Image credits: rollercoaster photo from <a href="https://www.flickr.com/photos/apol-photography/3729520874/">apol photography</a>, 
+cliff photo from <a href="http://www.fotolia.com">Fotolia (purchased)</a>,
+standing on the universe photo by <a href="https://www.flickr.com/photos/29233640@N07/23787450049/">Robert Couse-Baker</a>,
+VR grandma photo from <a href="https://www.youtube.com/watch?v=pAC5SeNH8jw&feature=youtu.be">Paul Rivot</a>,
+earth rising photo from <a href="https://www.flickr.com/photos/e-coli/3729468916/">Michele M.F.</a>,
+mountain sky from <a href="https://www.flickr.com/photos/gawthrop/3559516146">Peter Gawthrop</a></p>

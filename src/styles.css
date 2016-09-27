@@ -489,7 +489,7 @@ pre .xml .cdata {
 }
 
 .bg-another-world {
-  background-image: url(images/universefromameadow-mindcriminal-vignette.jpg);
+  background-image: url(images/standing-on-universe-flickr-couse-baker.jpg);
 }
 
 .bg-eee {
@@ -508,6 +508,14 @@ pre .xml .cdata {
 
 .bg-webvr-cubes {
   background-image: url(images/webvr-cubes.png);
+}
+
+.bg-earth-rising {
+  background-image: url(images/earth-rise-flickr-ecoli.jpg);
+}
+
+.bg-sky-gawthrop {
+  background-image: url(images/sky_by_gawthrop.jpg);
 }
 
 #slide-1 h1 {
