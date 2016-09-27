@@ -40,7 +40,7 @@ Mark Zuckerberg
 -- valign-bottom bg-grandma
 
 <blockquote>&ldquo;I've made a lot of applications & nothing I ever created was ever going to make someone 
-laugh, cry, recoil, scream or have that reaction that VR lets you have.&rdquo;</blockquote>
+laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
 
 Josh Carpenter
 
