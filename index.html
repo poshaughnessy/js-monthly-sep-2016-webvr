@@ -676,9 +676,11 @@ blockquote + p {
 
 /* Code Highlighting */
 code {
-  font-family: 'Fira Mono', Courier, sans-serif;
-  color: #333;
+  font-family: Courier, sans-serif;
   border-radius: 3px;
+  font-weight: 500;
+  text-shadow: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 pre {
@@ -688,8 +690,7 @@ pre {
 pre code {
   display: block;
   padding: .5em;
-  font-family: 'Fira Mono', Courier, sans-serif;
-  font-weight: 400;
+  font-size: 1.1em;
   overflow-y: hidden;
   background: transparent;
 }
@@ -706,11 +707,6 @@ pre .clojure .built_in,
 pre .nginx .title,
 pre .tex .special {
   color: #f92672;
-}
-
-pre code {
-  color: #333;
-  font-size: 1.1em;
 }
 
 pre code .constant {
@@ -954,24 +950,41 @@ laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
   </div>
   <div class="slide hidden  bg-lights-of-city" id="slide-9">
     <section class="slide-content"><h2 id="webvr-api">WebVR API</h2>
+<pre><code class="lang-javascript"># Get list of available headsets
+navigator.getVRDisplays();
+
+# Request fullscreen on headset
+VRDisplay.requestPresent({ source: myCanvas })
+
+# Like normal rAF but could be 90hz or more 
+VRDisplay.requestAnimationFrame();
+
+# Render what&#39;s on the source canvas
+VRDisplay.submitFrame();</code></pre>
 </section>
   </div>
   <div class="slide hidden  bg-lights-of-city" id="slide-10">
-    <section class="slide-content"><h2 id="three-js">three.js</h2>
+    <section class="slide-content"><pre><code class="lang-javascript"># Get eye offset and eye viewport data 
+# to help make our scene stereoscopic 
+VRDisplay.getEyeParameters(VREye);</code></pre>
 </section>
   </div>
   <div class="slide hidden  bg-lights-of-city" id="slide-11">
+    <section class="slide-content"><h2 id="three-js">three.js</h2>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-12">
     <section class="slide-content"><h2 id="a-frame">A-Frame</h2>
 </section>
   </div>
-  <div class="slide hidden  bg-eee" id="slide-12">
+  <div class="slide hidden  bg-eee" id="slide-13">
     <section class="slide-content"><p><img src="images/aframe-basic.png" alt="A-Frame basic scene"></p>
 </section>
   </div>
-  <div class="slide hidden  bg-llama-carousel" id="slide-13">
+  <div class="slide hidden  bg-llama-carousel" id="slide-14">
     <section class="slide-content"></section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-14">
+  <div class="slide hidden  bg-lights-of-city" id="slide-15">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <div class="contact">
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
