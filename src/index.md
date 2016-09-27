@@ -247,6 +247,8 @@ effect.render( scene, camera );
 
 ## A-Frame
 
+<!-- Remember to say it includes the polyfill for Cardboard -->
+
 
 -- bg-lights-of-city
 
