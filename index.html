@@ -577,6 +577,10 @@ li {
   font-size: 1.2em;
 }
 
+li code {
+  font-size: 0.9em;
+}
+
 .long-list li {
   font-size: 1em;
 }
@@ -680,7 +684,7 @@ code {
   font-family: Courier, sans-serif;
   border-radius: 3px;
   font-weight: 500;
-  text-shadow: 0;
+  text-shadow: none;
   -webkit-text-stroke-width: 0;
 }
 
@@ -801,7 +805,16 @@ pre .xml .cdata {
   opacity: .5;
 }
 
+.hljs-keyword {
+  color: #12ab2b;
+}
+
 /* Slide specific styles here */
+
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
 
 .bg-lights-of-city {
   background-image: url(images/lights-of-city-green-dark.jpg);
@@ -837,6 +850,10 @@ pre .xml .cdata {
 
 .bg-llama-carousel {
   background-image: url(images/llama-viewer.png);
+}
+
+.bg-webvr-cubes {
+  background-image: url(images/webvr-cubes.png);
 }
 
 #slide-1 h1 {
@@ -958,30 +975,40 @@ laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
 </section>
   </div>
   <div class="slide hidden  bg-lights-of-city" id="slide-8">
+    <section class="slide-content"><h3 id="stereoscopic">Stereoscopic</h3>
+<p><img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="width:80%"/></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-9">
+    <section class="slide-content"><h3 id="browser-handles-distortion">Browser handles distortion</h3>
+<p><img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="width:80%"/></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-10">
     <section class="slide-content"><h3 id="browser-enthusiasm-so-far-">Browser enthusiasm (so far)</h3>
 <p><img src="images/webvr-browser-enthusiasm.png" alt="WebVR browser enthusiasm"></p>
 <p class="caption"><a href="https://iswebvrready.org/">iswebvrready.org</a></p></section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-9">
+  <div class="slide hidden  bg-lights-of-city" id="slide-11">
     <section class="slide-content"><ul>
-<li>Chrome - special build &amp; flag</li>
-<li>Firefox - nightly build &amp; add-on</li>
-<li>Samsung Internet - visit <code>internet:</code></li>
-<li>Edge - they&#39;re working on it</li>
+<li><a href="https://webvr.info/get-chrome/">Chrome</a>: <em>special build &amp; flag</em></li>
+<li><a href="http://mozvr.com/#start">Firefox</a>: <em>nightly build &amp; add-on</em></li>
+<li><a href="http://developer.samsung.com/internet#gearvr-overview">Samsung Internet</a>: <em>visit <code>internet://webvr-enable</code></em></li>
+<li><a href="https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/">Edge</a>: <em>in development</em></li>
 </ul>
 <p><a href="https://webvr.info/">webvr.info</a></p>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-10">
+  <div class="slide hidden  bg-lights-of-city" id="slide-12">
     <section class="slide-content"><p><img src="images/webvr-requirements.png" alt="Requirements"></p>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-11">
+  <div class="slide hidden  bg-lights-of-city" id="slide-13">
     <section class="slide-content"><h2 id="webvr-api">WebVR API</h2>
-<p>Version &quot;1.1&quot; - <a href="http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html">bit.ly/webvr-update-sep-2016</a></p>
+<h4 id="version-1-1-bit-ly-webvr-update-sep-2016-http-blog-tojicode-com-2016-09-update-on-webvr-spec-chrome-and-https-html-">Version &quot;1.1&quot; - <a href="http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html">bit.ly/webvr-update-sep-2016</a></h4>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-12">
+  <div class="slide hidden  bg-lights-of-city" id="slide-14">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Get list of available headsets</span>
 navigator.getVRDisplays();
 
@@ -989,7 +1016,7 @@ navigator.getVRDisplays();
 VRDisplay.requestPresent({ source: myCanvas })</code></pre>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-13">
+  <div class="slide hidden  bg-lights-of-city" id="slide-15">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Like normal rAF but could be 90hz or more </span>
 VRDisplay.requestAnimationFrame();
 
@@ -997,7 +1024,7 @@ VRDisplay.requestAnimationFrame();
 VRDisplay.submitFrame();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-14">
+  <div class="slide hidden  bg-lights-of-city" id="slide-16">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">/**
  * Get eye offset &amp; rendering dimensions to help us
  * construct a stereoscopic scene for the user.
@@ -1011,22 +1038,91 @@ VRDisplay.getEyeParameters(VREye);
  VRDisplay.getFrameData();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-15">
-    <section class="slide-content"><h2 id="three-js">three.js</h2>
+  <div class="slide hidden  bg-lights-of-city" id="slide-17">
+    <section class="slide-content"><p><img src="images/webgl-logo.png" alt="WebGL"></p>
 </section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-16">
+  <div class="slide hidden  bg-lights-of-city" id="slide-18">
+    <section class="slide-content"><h2 id="three-js">three.js</h2>
+<p><img src="images/threejs_org.png" alt="threejs.org"></p>
+<p class="caption"><a href="https://threejs.org/">threejs.org</a></p></section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-19">
+    <section class="slide-content"><h3 id="let-s-make-a-spinning-cube">Let&#39;s make a spinning cube</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> renderer = <span class="hljs-keyword">new</span> THREE.WebGLRenderer();
+
+renderer.setSize( width, height );
+
+<span class="hljs-built_in">document</span>.body.appendChild( renderer.domElement );</code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-20">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> scene = <span class="hljs-keyword">new</span> THREE.Scene();
+
+<span class="hljs-keyword">var</span> camera = <span class="hljs-keyword">new</span> THREE.PerspectiveCamera(
+  <span class="hljs-number">45</span>,             <span class="hljs-comment">// Field of view angle</span>
+  width / height, <span class="hljs-comment">// Aspect ratio</span>
+  <span class="hljs-number">1</span>,              <span class="hljs-comment">// zNear</span>
+  <span class="hljs-number">1000</span>            <span class="hljs-comment">// zFar</span>
+);
+
+camera.position.z = <span class="hljs-number">100</span>;
+
+scene.add( camera );</code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-21">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cube = <span class="hljs-keyword">new</span> THREE.Mesh(
+  <span class="hljs-keyword">new</span> THREE.BoxGeometry( <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span> ), <span class="hljs-comment">// w, h, d</span>
+  <span class="hljs-keyword">new</span> THREE.MeshBasicMaterial( {color: <span class="hljs-number">0xFF0000</span>} );
+);
+
+scene.add( cube );</code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-22">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
+  cube.rotation.y += <span class="hljs-number">0.1</span>;
+  renderer.render( scene, camera );
+  requestAnimationFrame( animate );
+}
+
+animate();</code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city iframe" id="slide-23">
+    <section class="slide-content"><iframe src="demos/threejs-spinning-cube/index.html" scrolling="no" width="100%" height="100%"></iframe></section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-24">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> controls = <span class="hljs-keyword">new</span> THREE.VRControls( camera );
+<span class="hljs-keyword">var</span> effect = <span class="hljs-keyword">new</span> THREE.VREffect( renderer );
+
+...
+
+controls.update();
+effect.render( scene, camera );</code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-25">
+    <section class="slide-content"><p><img src="images/sbrowser-cubes1.jpg" alt="WebVR cubes on Samsung Internet" style="max-height:calc(100vh - 5em)"/></p>
+<p><a href="https://threejs.org/examples/webvr_cubes.html">threejs.org/examples/webvr_cubes.html</a></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-webvr-cubes" id="slide-26">
+    <section class="slide-content"></section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-27">
     <section class="slide-content"><h2 id="a-frame">A-Frame</h2>
 </section>
   </div>
-  <div class="slide hidden  bg-eee" id="slide-17">
+  <div class="slide hidden  bg-eee" id="slide-28">
     <section class="slide-content"><p><img src="images/aframe-basic.png" alt="A-Frame basic scene"></p>
 </section>
   </div>
-  <div class="slide hidden  bg-llama-carousel" id="slide-18">
+  <div class="slide hidden  bg-llama-carousel" id="slide-29">
     <section class="slide-content"></section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-19">
+  <div class="slide hidden  bg-lights-of-city" id="slide-30">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <div class="contact">
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
