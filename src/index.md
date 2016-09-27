@@ -12,7 +12,7 @@ controls: true
 ## Creating Virtual Worlds with JavaScript 
 
 <div class="contact">
-  <p>Peter O'Shaughnessy</p>
+  <p>Peter O'Shaughnessy, Samsung Internet</p>
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
@@ -27,6 +27,9 @@ controls: true
 <blockquote style="font-weight:900">&ldquo;VR is the next major computing platform after mobile.&rdquo;</blockquote>
 
 Mark Zuckerberg
+
+
+<!-- TODO slide showing different headsets: Gear VR, Vive, Oculus Rift, Cardboard, Daydream -->
 
 
 -- valign-top bg-cliff
