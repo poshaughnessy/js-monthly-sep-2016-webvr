@@ -220,6 +220,10 @@ li {
   font-size: 1.2em;
 }
 
+li code {
+  font-size: 0.9em;
+}
+
 .long-list li {
   font-size: 1em;
 }
@@ -323,7 +327,7 @@ code {
   font-family: Courier, sans-serif;
   border-radius: 3px;
   font-weight: 500;
-  text-shadow: 0;
+  text-shadow: none;
   -webkit-text-stroke-width: 0;
 }
 
@@ -444,7 +448,16 @@ pre .xml .cdata {
   opacity: .5;
 }
 
+.hljs-keyword {
+  color: #12ab2b;
+}
+
 /* Slide specific styles here */
+
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
 
 .bg-lights-of-city {
   background-image: url(images/lights-of-city-green-dark.jpg);
@@ -480,6 +493,10 @@ pre .xml .cdata {
 
 .bg-llama-carousel {
   background-image: url(images/llama-viewer.png);
+}
+
+.bg-webvr-cubes {
+  background-image: url(images/webvr-cubes.png);
 }
 
 #slide-1 h1 {

@@ -62,6 +62,20 @@ Josh Carpenter
 
 -- bg-lights-of-city
 
+### Stereoscopic
+
+<img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="width:80%"/>
+
+
+-- bg-lights-of-city
+
+### Browser handles distortion
+
+<img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="width:80%"/>
+
+
+-- bg-lights-of-city
+
 ### Browser enthusiasm (so far)
 
 ![WebVR browser enthusiasm](images/webvr-browser-enthusiasm.png)
@@ -71,10 +85,10 @@ Josh Carpenter
 
 -- bg-lights-of-city
 
-* Chrome - special build & flag
-* Firefox - nightly build & add-on
-* Samsung Internet - visit `internet:`
-* Edge - they're working on it
+* [Chrome](https://webvr.info/get-chrome/): *special build & flag*
+* [Firefox](http://mozvr.com/#start): *nightly build & add-on*
+* [Samsung Internet](http://developer.samsung.com/internet#gearvr-overview): *visit `internet://webvr-enable`*
+* [Edge](https://blogs.windows.com/msedgedev/2016/09/09/webvr-in-development-edge/): *in development*
 
 [webvr.info](https://webvr.info/)
 
@@ -88,7 +102,7 @@ Josh Carpenter
 
 ## WebVR API
 
-Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
+#### Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
 
 -- bg-lights-of-city
 
@@ -131,7 +145,101 @@ VRDisplay.getEyeParameters(VREye);
 
 -- bg-lights-of-city
 
+![WebGL](images/webgl-logo.png)
+
+
+-- bg-lights-of-city
+
 ## three.js
+
+![threejs.org](images/threejs_org.png)
+
+<p class="caption"><a href="https://threejs.org/">threejs.org</a></p>
+
+
+-- bg-lights-of-city
+
+### Let's make a spinning cube
+
+```javascript
+var renderer = new THREE.WebGLRenderer();
+
+renderer.setSize( width, height );
+
+document.body.appendChild( renderer.domElement );
+```
+
+
+-- bg-lights-of-city
+
+```javascript
+var scene = new THREE.Scene();
+
+var camera = new THREE.PerspectiveCamera(
+  45,             // Field of view angle
+  width / height, // Aspect ratio
+  1,              // zNear
+  1000            // zFar
+);
+
+camera.position.z = 100;
+
+scene.add( camera );
+```
+
+
+-- bg-lights-of-city
+
+```javascript
+var cube = new THREE.Mesh(
+  new THREE.BoxGeometry( 50, 50, 50 ), // w, h, d
+  new THREE.MeshBasicMaterial( {color: 0xFF0000} );
+);
+
+scene.add( cube );
+```
+
+
+-- bg-lights-of-city
+
+```javascript
+function animate() {
+  cube.rotation.y += 0.1;
+  renderer.render( scene, camera );
+  requestAnimationFrame( animate );
+}
+
+animate();
+```
+
+
+-- bg-lights-of-city iframe
+
+<iframe src="demos/threejs-spinning-cube/index.html" scrolling="no" width="100%" height="100%"></iframe>
+
+
+-- bg-lights-of-city
+
+```javascript
+var controls = new THREE.VRControls( camera );
+var effect = new THREE.VREffect( renderer );
+
+...
+
+controls.update();
+effect.render( scene, camera );
+```
+
+
+-- bg-lights-of-city
+
+<img src="images/sbrowser-cubes1.jpg" alt="WebVR cubes on Samsung Internet" style="max-height:calc(100vh - 5em)"/>
+
+[threejs.org/examples/webvr_cubes.html](https://threejs.org/examples/webvr_cubes.html)
+
+
+-- bg-webvr-cubes
+
 
 -- bg-lights-of-city
 
