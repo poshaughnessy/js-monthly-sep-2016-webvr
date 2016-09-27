@@ -809,6 +809,11 @@ pre .xml .cdata {
   color: #12ab2b;
 }
 
+.hljs-tag,
+.hljs-name {
+  color: #07d2d4;
+}
+
 /* Slide specific styles here */
 
 .iframe .slide-content {
@@ -846,6 +851,12 @@ pre .xml .cdata {
 
 .bg-eee {
   background: #eee;
+}
+
+.bg-aframe {
+  background-color: #eee;
+  background-image: url(images/aframe-basic.png);
+  background-position-y: bottom;
 }
 
 .bg-llama-carousel {
@@ -1111,12 +1122,26 @@ effect.render( scene, camera );</code></pre>
   <div class="slide hidden  bg-webvr-cubes" id="slide-26">
     <section class="slide-content"></section>
   </div>
-  <div class="slide hidden  bg-lights-of-city" id="slide-27">
+  <div class="slide hidden  bg-aframe valign-top" id="slide-27">
     <section class="slide-content"><h2 id="a-frame">A-Frame</h2>
 </section>
   </div>
-  <div class="slide hidden  bg-eee" id="slide-28">
-    <section class="slide-content"><p><img src="images/aframe-basic.png" alt="A-Frame basic scene"></p>
+  <div class="slide hidden  bg-lights-of-city" id="slide-28">
+    <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Basic A-Frame Demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/a-frame.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 1.25 -1"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"1.25"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#EF2D5E"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 0.5 1"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"0 45 0"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#4CC3D9"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-cylinder</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"1 0.75 1"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"0.5"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#FFC65D"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-cylinder</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-plane</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"-90 0 0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#7BC8A4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-plane</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-sky</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#ECECEC"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sky</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
 </section>
   </div>
   <div class="slide hidden  bg-llama-carousel" id="slide-29">
