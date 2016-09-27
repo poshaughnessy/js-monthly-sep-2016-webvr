@@ -319,9 +319,11 @@ blockquote + p {
 
 /* Code Highlighting */
 code {
-  font-family: 'Fira Mono', Courier, sans-serif;
-  color: #333;
+  font-family: Courier, sans-serif;
   border-radius: 3px;
+  font-weight: 500;
+  text-shadow: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 pre {
@@ -331,8 +333,7 @@ pre {
 pre code {
   display: block;
   padding: .5em;
-  font-family: 'Fira Mono', Courier, sans-serif;
-  font-weight: 400;
+  font-size: 1.1em;
   overflow-y: hidden;
   background: transparent;
 }
@@ -349,11 +350,6 @@ pre .clojure .built_in,
 pre .nginx .title,
 pre .tex .special {
   color: #f92672;
-}
-
-pre code {
-  color: #333;
-  font-size: 1.1em;
 }
 
 pre code .constant {

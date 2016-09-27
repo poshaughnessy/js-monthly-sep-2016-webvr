@@ -68,6 +68,28 @@ Josh Carpenter
 
 ## WebVR API
 
+```javascript
+# Get list of available headsets
+navigator.getVRDisplays();
+
+# Request fullscreen on headset
+VRDisplay.requestPresent({ source: myCanvas })
+
+# Like normal rAF but could be 90hz or more 
+VRDisplay.requestAnimationFrame();
+
+# Render what's on the source canvas
+VRDisplay.submitFrame();
+```
+
+-- bg-lights-of-city
+
+```javascript
+# Get eye offset and eye viewport data 
+# to help make our scene stereoscopic 
+VRDisplay.getEyeParameters(VREye);
+```
+
 
 -- bg-lights-of-city
 
