@@ -452,6 +452,11 @@ pre .xml .cdata {
   color: #12ab2b;
 }
 
+.hljs-tag,
+.hljs-name {
+  color: #07d2d4;
+}
+
 /* Slide specific styles here */
 
 .iframe .slide-content {
@@ -489,6 +494,12 @@ pre .xml .cdata {
 
 .bg-eee {
   background: #eee;
+}
+
+.bg-aframe {
+  background-color: #eee;
+  background-image: url(images/aframe-basic.png);
+  background-position-y: bottom;
 }
 
 .bg-llama-carousel {
