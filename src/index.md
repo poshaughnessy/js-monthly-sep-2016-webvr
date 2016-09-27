@@ -47,7 +47,7 @@ Josh Carpenter
 
 -- valign-bottom bg-another-world
 
-## Forgot web sites, we can now create web *worlds*
+## From web sites to web *worlds*
 
 
 -- bg-lights-of-city
